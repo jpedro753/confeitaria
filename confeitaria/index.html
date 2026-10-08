@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fffaf5">
+    <meta
+      name="description"
+      content="Confeitaria artesanal feita com carinho. Conheça nosso cardápio e faça sua encomenda."
+    >
+    <title>Doce Afeto | Confeitaria artesanal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header" id="inicio">
+      <a class="brand" href="#inicio" aria-label="Doce Afeto — início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M20 34s-13-7.8-13-17.1C7 9 16.2 7.5 20 14c3.8-6.5 13-5 13 2.9C33 26.2 20 34 20 34Z" />
+            <path d="M13 23h14M16 18h8" />
+          </svg>
+        </span>
+        <span class="brand-name">doce <strong>afeto</strong></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#bolos">Bolos</a>
+        <a href="#doces">Doces</a>
+        <a href="#encomendas">Encomendas</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contato">Contato</a>
+        <a class="order-button" href="#encomendas">
+          Fazer encomenda
+          <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome" aria-labelledby="welcome-title">
+        <div class="welcome-content">
+          <p class="eyebrow">Feito à mão, com carinho</p>
+          <h1 id="welcome-title">Momentos especiais merecem um <span>doce especial.</span></h1>
+          <p class="welcome-copy">
+            Bolos e doces artesanais feitos com carinho para deixar sua comemoração ainda mais saborosa.
+          </p>
+          <div class="welcome-actions">
+            <a class="order-button hero-button" href="#cardapio">Ver cardápio</a>
+            <a class="order-button hero-button hero-button-outline" href="#encomendas">
+              Fazer encomenda <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+        <figure class="welcome-photo">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="Bolo de chocolate decorado com cobertura e rosetas de chocolate"
+            fetchpriority="high"
+          >
+        </figure>
+      </section>
+
+      <section class="content-section featured-section" id="cardapio" aria-labelledby="featured-title">
+        <div class="featured-heading">
+          <p class="eyebrow">Com carinho, do nosso forno</p>
+          <h2 id="featured-title">Produtos em destaque</h2>
+          <p>Conheça nossos bolos, cupcakes, brownies e tortas, preparados para deixar cada momento ainda mais gostoso.</p>
+        </div>
+        <div class="sweet-category" id="bolos" aria-labelledby="featured-cakes-title">
+          <h3 class="sweet-category-title" id="featured-cakes-title">Bolos</h3>
+          <div class="featured-grid">
+          <article class="featured-card">
+            <img
+              src="images/bolo-nutella-morango.jpg"
+              alt="Bolo de chocolate com cobertura de Nutella e morangos frescos"
+              loading="lazy"
+            >
+            <div class="featured-card-content">
+              <h3>Nutella com Morango</h3>
+              <p>Massa fofinha, recheio cremoso de Nutella e morangos frescos para um toque irresistível.</p>
+              <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+              <a class="order-button featured-order" href="#encomendas">
+                Encomendar <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+          <article class="featured-card">
+            <img
+              src="images/bolo-leite-ninho-coco.jpg"
+              alt="Bolo branco com recheio cremoso de leite Ninho e coco"
+              loading="lazy"
+            >
+            <div class="featured-card-content">
+              <h3>Leite Ninho com Coco</h3>
+              <p>Uma combinação delicada de creme de leite Ninho e coco, com sabor suave e textura aveludada.</p>
+              <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+              <a class="order-button featured-order" href="#encomendas">
+                Encomendar <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+          <article class="featured-card">
+            <img
+              src="images/bolo-chocolate-belga.jpg"
+              alt="Bolo de chocolate com ganache e pedaços de chocolate"
+              loading="lazy"
+            >
+            <div class="featured-card-content">
+              <h3>Chocolate Belga</h3>
+              <p>Massa intensa de chocolate coberta com ganache cremosa e finalizada com raspas de chocolate.</p>
+              <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+              <a class="order-button featured-order" href="#encomendas">
+                Encomendar <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+          </div>
+        </div>
+        <div class="sweet-category" aria-labelledby="featured-cupcakes-title">
+          <h3 class="sweet-category-title" id="featured-cupcakes-title">Cupcakes</h3>
+          <div class="featured-grid">
+            <article class="featured-card">
+              <img src="images/doce-cupcake-arco-iris.jpg" alt="Cupcake com cobertura colorida em espiral, confeitos e cereja" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Cupcake Arco-Íris</h3>
+                <p>Massa fofinha com cobertura de buttercream colorido, confeitos crocantes e uma cereja no topo.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="featured-card">
+              <img src="images/doce-cupcake-morango.jpg" alt="Cupcake com cobertura rosa, morango fresco e calda de chocolate" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Cupcake de Morango</h3>
+                <p>Massa leve com cobertura cremosa de morango, finalizada com fruta fresca e calda de chocolate.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="featured-card">
+              <img src="images/doce-cupcake-chocolate-trufado.jpg" alt="Cupcake de chocolate com cobertura alta de ganache" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Cupcake Trufado de Chocolate</h3>
+                <p>Massa de chocolate com cobertura alta e cremosa de ganache para os apaixonados por chocolate.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="sweet-category" aria-labelledby="featured-brownies-title">
+          <h3 class="sweet-category-title" id="featured-brownies-title">Brownies</h3>
+          <div class="featured-grid">
+            <article class="featured-card">
+              <img src="images/doce-brownie-caramelo-flor-de-sal.jpg" alt="Quadrados de brownie cobertos com caramelo e flor de sal" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Brownie de Caramelo com Flor de Sal</h3>
+                <p>Brownie macio com uma generosa camada de caramelo e um toque especial de flor de sal.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="featured-card">
+              <img src="images/doce-brownie-nozes.jpg" alt="Brownies de chocolate úmidos com pedaços de nozes" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Brownie de Chocolate com Nozes</h3>
+                <p>Chocolate intenso, interior macio e pedaços de nozes para uma combinação clássica e deliciosa.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="featured-card">
+              <img src="images/doce-brownie-com-sorvete.jpg" alt="Brownie de chocolate servido com uma bola de sorvete de baunilha" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Brownie com Sorvete</h3>
+                <p>Brownie de chocolate servido com uma bola de sorvete de baunilha: quentinho, gelado e irresistível.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="sweet-category" aria-labelledby="featured-pies-title">
+          <h3 class="sweet-category-title" id="featured-pies-title">Tortas</h3>
+          <div class="featured-grid">
+            <article class="featured-card">
+              <img src="images/doce-torta-limao-merengue.jpg" alt="Torta de limão com merengue dourado" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Torta de Limão com Merengue</h3>
+                <p>Base crocante, creme de limão equilibrado e uma camada generosa de merengue tostado.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="featured-card">
+              <img src="images/doce-torta-morango-creme.jpg" alt="Torta de morango com creme, chantilly e raspas de chocolate" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Torta de Morango com Creme</h3>
+                <p>Base crocante com creme suave, morangos frescos, chantilly e raspas de chocolate.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="content-section featured-section" id="doces" aria-labelledby="sweets-title">
+        <div class="featured-heading">
+          <p class="eyebrow">Pequenas alegrias</p>
+          <h2 id="sweets-title">Nossos doces</h2>
+          <p>Docinhos feitos à mão para presentear, comemorar e se deliciar.</p>
+        </div>
+        <div class="sweet-category" aria-labelledby="all-sweets-title">
+          <h3 class="sweet-category-title" id="all-sweets-title">Todos</h3>
+          <p class="category-placeholder">Confira as categorias e os produtos em destaque.</p>
+        </div>
+        <div class="sweet-category" aria-labelledby="cupcakes-title">
+          <h3 class="sweet-category-title" id="cupcakes-title">Cupcakes</h3>
+          <p class="category-placeholder">Confira nossos cupcakes em Produtos em destaque.</p>
+        </div>
+        <div class="sweet-category" aria-labelledby="brownies-title">
+          <h3 class="sweet-category-title" id="brownies-title">Brownies</h3>
+          <div class="featured-grid">
+            <article class="featured-card" hidden>
+              <img src="images/doce-brownie-caramelo-flor-de-sal.jpg" alt="Quadrados de brownie cobertos com caramelo e flor de sal" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Brownie de Caramelo com Flor de Sal</h3>
+                <p>Brownie macio com uma generosa camada de caramelo e um toque especial de flor de sal.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="featured-card" hidden>
+              <img src="images/doce-brownie-nozes.jpg" alt="Brownies de chocolate úmidos com pedaços de nozes" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Brownie de Chocolate com Nozes</h3>
+                <p>Chocolate intenso, interior macio e pedaços de nozes para uma combinação clássica e deliciosa.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="featured-card" hidden>
+              <img src="images/doce-brownie-com-sorvete.jpg" alt="Brownie de chocolate servido com uma bola de sorvete de baunilha" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Brownie com Sorvete</h3>
+                <p>Brownie de chocolate servido com uma bola de sorvete de baunilha: quentinho, gelado e irresistível.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <p class="category-placeholder">Confira nossos brownies em Produtos em destaque.</p>
+        </div>
+        <div class="sweet-category" aria-labelledby="tortas-title">
+          <h3 class="sweet-category-title" id="tortas-title">Tortas</h3>
+          <div class="featured-grid">
+            <article class="featured-card" hidden>
+              <img src="images/doce-torta-limao-merengue.jpg" alt="Torta de limão com merengue dourado" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Torta de Limão com Merengue</h3>
+                <p>Base crocante, creme de limão equilibrado e uma camada generosa de merengue tostado.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="featured-card" hidden>
+              <img src="images/doce-torta-morango-creme.jpg" alt="Torta de morango com creme, chantilly e raspas de chocolate" loading="lazy">
+              <div class="featured-card-content">
+                <h3>Torta de Morango com Creme</h3>
+                <p>Base crocante com creme suave, morangos frescos, chantilly e raspas de chocolate.</p>
+                <p class="featured-price">A partir de <strong>R$ 49,99</strong></p>
+                <a class="order-button featured-order" href="#encomendas">Encomendar <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <p class="category-placeholder">Confira nossas tortas em Produtos em destaque.</p>
+        </div>
+        <div class="sweet-category" aria-labelledby="sweets-cakes-title">
+          <h3 class="sweet-category-title" id="sweets-cakes-title">Bolos</h3>
+          <p class="category-placeholder">Confira nossos bolos em Produtos em destaque.</p>
+        </div>
+        <div class="sweet-category" aria-labelledby="kits-title">
+          <h3 class="sweet-category-title" id="kits-title">Kits</h3>
+          <p class="category-placeholder">Novidades em breve.</p>
+        </div>
+      </section>
+      <section class="custom-cake-section" id="bolos-personalizados" aria-labelledby="custom-cake-title">
+        <div class="custom-cake-content">
+          <p class="eyebrow">Feito especialmente para você</p>
+          <h2 id="custom-cake-title">Tem uma ideia? Nós transformamos em bolo.</h2>
+          <p class="custom-cake-intro">
+            Criamos bolos personalizados para celebrar momentos únicos, com detalhes pensados para combinar com a sua ocasião.
+          </p>
+          <ul class="occasion-grid" aria-label="Ocasiões para bolos personalizados">
+            <li>
+              <h3>Aniversários</h3>
+              <p>Um bolo especial para celebrar cada novo ciclo.</p>
+            </li>
+            <li>
+              <h3>Casamentos</h3>
+              <p>Sabores e acabamentos à altura de um dia inesquecível.</p>
+            </li>
+            <li>
+              <h3>Chás de bebê</h3>
+              <p>Delicadeza e carinho para dar boas-vindas.</p>
+            </li>
+            <li>
+              <h3>Formaturas</h3>
+              <p>Uma doce comemoração para uma grande conquista.</p>
+            </li>
+            <li>
+              <h3>Festas infantis</h3>
+              <p>Criações divertidas para tornar a festa ainda mais especial.</p>
+            </li>
+            <li>
+              <h3>Eventos corporativos</h3>
+              <p>Bolos personalizados para celebrar e compartilhar com sua equipe.</p>
+            </li>
+          </ul>
+          <a
+            class="order-button custom-cake-cta"
+            href="https://wa.me/5548996564656?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Seguem%20meus%20dados%3A%0ANome%3A%0AWhatsApp%3A%0AData%20do%20evento%3A%0ATipo%20de%20evento%3A%0AQuantidade%20de%20pessoas%3A%0AProduto%20desejado%3A%0AObserva%C3%A7%C3%B5es%3A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Solicitar orçamento <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+      <section class="content-section content-section-alt" id="encomendas">
+        <p class="eyebrow">Vamos preparar algo especial?</p>
+        <h2>Encomendas</h2>
+        <p>Conte para nós o que você está imaginando. Será um prazer fazer parte desse momento.</p>
+        <div class="section-order-actions">
+          <a class="order-button section-order" href="#contato">
+            Fazer encomenda <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="order-button section-order section-order-whatsapp"
+            href="https://wa.me/5548996564656?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Seguem%20meus%20dados%3A%0ANome%3A%0AWhatsApp%3A%0AData%20do%20evento%3A%0ATipo%20de%20evento%3A%0AQuantidade%20de%20pessoas%3A%0AProduto%20desejado%3A%0AObserva%C3%A7%C3%B5es%3A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Solicitar orçamento para data especial <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+      <section class="content-section about-section" id="sobre">
+        <p class="eyebrow">Nossa história</p>
+        <h2>Sobre nós</h2>
+        <p>Acreditamos que carinho também se sente no sabor — e cada receita é feita com esse cuidado.</p>
+        <p class="about-copy">
+          Tudo começou com uma pequena cozinha e uma paixão por transformar receitas em momentos especiais. Com dedicação e carinho, cada preparo se tornou uma oportunidade de compartilhar algo feito com afeto.
+        </p>
+        <p class="about-copy">
+          Hoje, seguimos criando bolos e doces artesanalmente, cuidando de cada detalhe e escolhendo ingredientes com atenção. Queremos estar presentes nas suas celebrações e tornar cada encontro ainda mais gostoso.
+        </p>
+      </section>
+      <section class="content-section review-section" id="avaliacoes" aria-labelledby="reviews-title">
+        <p class="eyebrow">Palavras que adoçam nosso dia</p>
+        <h2 id="reviews-title">Avaliações</h2>
+        <div class="review-grid">
+          <article class="review-card">
+            <span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>
+              <p>O bolo ficou lindo e delicioso. O cuidado da equipe fez toda a diferença na nossa comemoração!</p>
+            </blockquote>
+            <div class="review-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Retrato ilustrativo de Mariana Alves"
+                width="52"
+                height="52"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+              <p>Mariana Alves</p>
+            </div>
+          </article>
+          <article class="review-card">
+            <span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>
+              <p>Atendimento carinhoso, entrega caprichada e doces maravilhosos. Encomendar foi muito fácil.</p>
+            </blockquote>
+            <div class="review-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Retrato ilustrativo de Rafael Duarte"
+                width="52"
+                height="52"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+              <p>Rafael Duarte</p>
+            </div>
+          </article>
+          <article class="review-card">
+            <span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>
+              <p>Todos elogiaram o sabor e a apresentação. Dá para sentir o carinho em cada detalhe.</p>
+            </blockquote>
+            <div class="review-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Retrato ilustrativo de Elisa Nogueira"
+                width="52"
+                height="52"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+              <p>Elisa Nogueira</p>
+            </div>
+          </article>
+          <article class="review-card">
+            <span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>
+              <p>Uma experiência especial do começo ao fim. Com certeza vamos encomendar novamente!</p>
+            </blockquote>
+            <div class="review-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/75.jpg"
+                alt="Retrato ilustrativo de Bruno Valença"
+                width="52"
+                height="52"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+              <p>Bruno Valença</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="featured-section kits-section" id="kits-presentes" aria-labelledby="kits-presentes-title">
+        <div class="featured-heading">
+          <p class="eyebrow">Carinho em cada detalhe</p>
+          <h2 id="kits-presentes-title">Kits e presentes</h2>
+          <p>Presentes que matam a fome e aquecem o coração. Encontre uma opção deliciosa para surpreender em qualquer ocasião.</p>
+        </div>
+        <div class="kit-grid">
+          <article class="kit-card">
+            <div class="kit-image-placeholder" role="img" aria-label="Espaço reservado para a foto do Kit Aniversário">
+              <span>Foto em breve</span>
+            </div>
+            <div class="kit-card-content">
+              <h3>Kit Aniversário</h3>
+              <p>Uma seleção especial para deixar o dia de comemorar ainda mais gostoso.</p>
+            </div>
+          </article>
+          <article class="kit-card">
+            <div class="kit-image-placeholder" role="img" aria-label="Espaço reservado para a foto da Caixa de Brigadeiros">
+              <span>Foto em breve</span>
+            </div>
+            <div class="kit-card-content">
+              <h3>Caixa de Brigadeiros</h3>
+              <p>Brigadeiros preparados com carinho, perfeitos para presentear e compartilhar.</p>
+            </div>
+          </article>
+          <article class="kit-card">
+            <div class="kit-image-placeholder" role="img" aria-label="Espaço reservado para a foto do kit Café da Tarde">
+              <span>Foto em breve</span>
+            </div>
+            <div class="kit-card-content">
+              <h3>Café da Tarde</h3>
+              <p>Uma pausa deliciosa com quitutes feitos para acompanhar bons momentos.</p>
+            </div>
+          </article>
+          <article class="kit-card">
+            <div class="kit-image-placeholder" role="img" aria-label="Espaço reservado para a foto do Box Romântico">
+              <span>Foto em breve</span>
+            </div>
+            <div class="kit-card-content">
+              <h3>Box Romântico</h3>
+              <p>Uma surpresa cheia de doçura para celebrar a dois e demonstrar seu carinho.</p>
+            </div>
+          </article>
+          <article class="kit-card">
+            <div class="kit-image-placeholder" role="img" aria-label="Espaço reservado para a foto do kit Mini Bolo mais Docinhos">
+              <span>Foto em breve</span>
+            </div>
+            <div class="kit-card-content">
+              <h3>Mini Bolo + Docinhos</h3>
+              <p>Uma combinação charmosa de bolo e docinhos para comemorações intimistas.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="content-section delivery-section" id="entrega-retirada" aria-labelledby="delivery-title">
+        <div class="delivery-content">
+          <p class="eyebrow">Informações importantes</p>
+          <h2 id="delivery-title">Entrega e retirada</h2>
+          <p class="delivery-intro">Confira as opções e condições para receber seu pedido ou retirá-lo com a gente.</p>
+          <div class="delivery-grid">
+            <article class="delivery-card">
+              <span class="delivery-icon" aria-hidden="true">⌖</span>
+              <h3>Região de entrega</h3>
+              <p>Atendemos toda a região de <strong>Garopaba – SC</strong>.</p>
+            </article>
+            <article class="delivery-card">
+              <span class="delivery-icon" aria-hidden="true">$</span>
+              <h3>Taxa de entrega</h3>
+              <p>Taxa fixa de <strong>R$ 10,00</strong>.</p>
+            </article>
+            <article class="delivery-card">
+              <span class="delivery-icon" aria-hidden="true">◷</span>
+              <h3>Horário de entrega</h3>
+              <p>Entregas disponíveis das <strong>9h às 22h</strong>.</p>
+            </article>
+            <article class="delivery-card">
+              <span class="delivery-icon" aria-hidden="true">3</span>
+              <h3>Prazo para encomendas</h3>
+              <p>Faça seu pedido com pelo menos <strong>3 dias de antecedência</strong>.</p>
+            </article>
+            <article class="delivery-card">
+              <span class="delivery-icon" aria-hidden="true">⌂</span>
+              <h3>Retirada no local</h3>
+              <p>Você também pode retirar seu pedido. Combine o endereço e o horário pelo WhatsApp.</p>
+            </article>
+            <article class="delivery-card delivery-payment">
+              <span class="delivery-icon" aria-hidden="true">✓</span>
+              <h3>Formas de pagamento</h3>
+              <p>Pix, cartão de crédito, cartão de débito ou dinheiro.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="content-section faq-section" id="faq" aria-labelledby="faq-title">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2 id="faq-title">Perguntas e respostas</h2>
+        <p class="faq-intro">Reunimos aqui algumas informações para ajudar a planejar seu pedido.</p>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Com quanto tempo devo fazer minha encomenda?</summary>
+            <p>Recomendamos fazer seu pedido com 2 a 3 dias de antecedência. Para bolos personalizados ou datas concorridas, entre em contato o quanto antes para verificarmos a disponibilidade.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Vocês fazem bolos personalizados?</summary>
+            <p>Sim! Criamos bolos personalizados para diferentes celebrações. Conte sua ideia, a ocasião e os detalhes que gostaria de incluir para conversarmos sobre as possibilidades.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Posso escolher o recheio?</summary>
+            <p>Sim. Você pode consultar as opções de recheio disponíveis no momento da encomenda e escolher a combinação que mais gostar.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Vocês entregam?</summary>
+            <p>Sim! Fazemos entregas em toda a região de Garopaba – SC, das 9h às 22h. A taxa de entrega é de R$ 10,00.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quais são as formas de pagamento?</summary>
+            <p>Aceitamos Pix, cartão de crédito, cartão de débito e dinheiro.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Posso enviar uma foto de referência?</summary>
+            <p>Sim! Envie sua foto de referência pelo WhatsApp para compartilhar sua ideia com a gente.
+              <a
+                href="https://wa.me/5548996564656?text=Ol%C3%A1%2C%20gostaria%20de%20enviar%20uma%20foto%20de%20refer%C3%AAncia%20para%20meu%20pedido."
+                target="_blank"
+                rel="noopener noreferrer"
+              >Fale conosco pelo WhatsApp.</a>
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="content-section contact-section" id="contato" aria-labelledby="contact-title">
+        <p class="eyebrow">Adoraríamos conversar</p>
+        <h2 id="contact-title">Contato</h2>
+        <p class="contact-intro">Fale com a gente ou confira nossas informações de atendimento.</p>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <span class="contact-icon" aria-hidden="true">⌖</span>
+            <h3>Endereço</h3>
+            <p>Não informado</p>
+          </article>
+          <article class="contact-card">
+            <span class="contact-icon" aria-hidden="true">↗</span>
+            <h3>Google Maps</h3>
+            <p>Não informado</p>
+          </article>
+          <article class="contact-card">
+            <span class="contact-icon" aria-hidden="true">◉</span>
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/5548996564656" target="_blank" rel="noopener noreferrer">+55 (48) 99656-4656</a></p>
+          </article>
+          <article class="contact-card">
+            <span class="contact-icon" aria-hidden="true">◎</span>
+            <h3>Instagram</h3>
+            <p><a href="https://www.instagram.com/joao.dpaulas/" target="_blank" rel="noopener noreferrer">@joao.dpaulas</a></p>
+          </article>
+          <article class="contact-card">
+            <span class="contact-icon" aria-hidden="true">◷</span>
+            <h3>Horário de funcionamento</h3>
+            <p>Todos os dias, das <strong>8h às 19h</strong>.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="footer-brand-name" href="#inicio">🍰 Doce Afeto</a>
+          <p>Bolos e doces feitos para transformar momentos em memórias.</p>
+        </div>
+        <nav class="footer-navigation" aria-label="Navegação do rodapé">
+          <h2>Explore</h2>
+          <a href="#inicio">Início</a>
+          <a href="#cardapio">Cardápio</a>
+          <a href="#encomendas">Encomendas</a>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="footer-contact">
+          <h2>Fale com a gente</h2>
+          <a href="https://wa.me/5548996564656" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">📱</span> WhatsApp
+          </a>
+          <a href="https://www.instagram.com/joao.dpaulas/" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">📷</span> Instagram
+          </a>
+          <a href="#contato">
+            <span aria-hidden="true">📍</span> Endereço não informado
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Doce Afeto</p>
+        <p>Feito com carinho, do nosso forno para seus momentos especiais.</p>
+      </div>
+    </footer>
+
+    <script>
+      const orderMessage = "Olá! Gostaria de solicitar um orçamento. Seguem meus dados:\nNome:\nWhatsApp:\nData do evento:\nTipo de evento:\nQuantidade de pessoas:\nProduto desejado:\nObservações:";
+      const orderWhatsappUrl = `https://wa.me/5548996564656?text=${encodeURIComponent(orderMessage)}`;
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navigation = document.querySelector(".primary-navigation");
+
+      document.querySelectorAll(
+        ".primary-navigation > .order-button, .hero-button-outline, .featured-order, .section-order-actions .section-order, .custom-cake-cta",
+      ).forEach((link) => {
+        link.href = orderWhatsappUrl;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      });
+
+      function setMenuOpen(isOpen) {
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+        navigation.classList.toggle("is-open", isOpen);
+      }
+
+      menuToggle.addEventListener("click", () => {
+        setMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
+      });
+
+      navigation.addEventListener("click", (event) => {
+        if (event.target.closest("a")) setMenuOpen(false);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") setMenuOpen(false);
+      });
+    </script>
+  </body>
+</html>
